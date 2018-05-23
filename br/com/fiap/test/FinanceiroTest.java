@@ -15,9 +15,10 @@ public class FinanceiroTest {
 		financeiro = new Financeiro();
 	}
 	
+	@Test
 	public void testCalcularCPMF() {
-		double resultadoObtido = financeiro.calcularCPMF(100d);
-		assertEquals(0.38, resultadoObtido);
+		Double resultadoObtido = financeiro.calcularCPMF(100d);
+		assertEquals(new Double(0.38), resultadoObtido);
 	}
 	
 	@Test(expected = RuntimeException.class) 
